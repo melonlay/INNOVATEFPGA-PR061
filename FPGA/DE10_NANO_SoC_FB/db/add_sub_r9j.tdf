@@ -1,0 +1,80 @@
+--lpm_add_sub CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 DEVICE_FAMILY="Cyclone V" LPM_DIRECTION="ADD" LPM_PIPELINE=5 LPM_REPRESENTATION="SIGNED" LPM_WIDTH=64 ONE_INPUT_IS_CONSTANT="NO" clock dataa datab result
+--VERSION_BEGIN 18.1 cbx_cycloneii 2018:09:12:13:04:24:SJ cbx_lpm_add_sub 2018:09:12:13:04:24:SJ cbx_mgl 2018:09:12:13:10:36:SJ cbx_nadder 2018:09:12:13:04:24:SJ cbx_stratix 2018:09:12:13:04:24:SJ cbx_stratixii 2018:09:12:13:04:24:SJ  VERSION_END
+
+
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
+--  Your use of Intel Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Intel Program License 
+--  Subscription Agreement, the Intel Quartus Prime License Agreement,
+--  the Intel FPGA IP License Agreement, or other applicable license
+--  agreement, including, without limitation, that your use is for
+--  the sole purpose of programming logic devices manufactured by
+--  Intel and sold by Intel or its authorized distributors.  Please
+--  refer to the applicable agreement for further details.
+
+
+FUNCTION cyclonev_lcell_comb (cin, dataa, datab, datac, datad, datae, dataf, datag, sharein)
+WITH ( DONT_TOUCH, EXTENDED_LUT, LUT_MASK, SHARED_ARITH)
+RETURNS ( combout, cout, shareout, sumout);
+
+--synthesis_resources = lut 340 reg 330 
+SUBDESIGN add_sub_r9j
+( 
+	clock	:	input;
+	dataa[63..0]	:	input;
+	datab[63..0]	:	input;
+	result[63..0]	:	output;
+) 
+VARIABLE 
+	add_sub_cell_ffa[63..0] : dffe;
+	inter_regrs_cin_ffa[9..0] : dffe;
+	pad_cell_ffa[255..0] : dffe;
+	add_sub_cella[63..0] : cyclonev_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "000000FF0000FF00",
+			SHARED_ARITH = "off"
+		);
+	inter_regrs_cina[9..0] : cyclonev_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "0000AAAA00005555",
+			SHARED_ARITH = "off"
+		);
+	inter_regrs_couta[9..0] : cyclonev_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "000055550000AAAA",
+			SHARED_ARITH = "off"
+		);
+	pad_cella[255..0] : cyclonev_lcell_comb
+		WITH (
+			EXTENDED_LUT = "off",
+			LUT_MASK = "000000FF0000FF00",
+			SHARED_ARITH = "off"
+		);
+
+BEGIN 
+	add_sub_cell_ffa[].clk = clock;
+	add_sub_cell_ffa[].d = add_sub_cella[].sumout;
+	inter_regrs_cin_ffa[].clk = clock;
+	inter_regrs_cin_ffa[].d = inter_regrs_cina[].sumout;
+	pad_cell_ffa[].clk = clock;
+	pad_cell_ffa[].d = pad_cella[].sumout;
+	add_sub_cella[].cin = ( add_sub_cella[62..48].cout, B"0", add_sub_cella[46..36].cout, B"0", add_sub_cella[34..24].cout, B"0", add_sub_cella[22..12].cout, B"0", add_sub_cella[10..0].cout, B"0");
+	add_sub_cella[].datad = dataa[];
+	add_sub_cella[].dataf = datab[];
+	inter_regrs_cina[].cin = ( pad_cella[175].cout, pad_cella[111].cout, pad_cella[99].cout, pad_cella[47].cout, pad_cella[35].cout, pad_cella[23].cout, add_sub_cella[47].cout, add_sub_cella[35].cout, add_sub_cella[23].cout, add_sub_cella[11].cout);
+	inter_regrs_cina[].dataa = B"1111111111";
+	inter_regrs_couta[].cin = B"0000000000";
+	inter_regrs_couta[].dataa = ( inter_regrs_cin_ffa[9..0].q);
+	pad_cella[].cin = ( pad_cella[254..240].cout, inter_regrs_couta[9].cout, pad_cella[238..228].cout, B"0", pad_cella[226..216].cout, B"0", pad_cella[214..204].cout, B"0", pad_cella[202..192].cout, B"0", pad_cella[190..176].cout, inter_regrs_couta[8].cout, pad_cella[174..164].cout, inter_regrs_couta[7].cout, pad_cella[162..152].cout, B"0", pad_cella[150..140].cout, B"0", pad_cella[138..128].cout, B"0", pad_cella[126..112].cout, inter_regrs_couta[6].cout, pad_cella[110..100].cout, inter_regrs_couta[5].cout, pad_cella[98..88].cout, inter_regrs_couta[4].cout, pad_cella[86..76].cout, B"0", pad_cella[74..64].cout, B"0", pad_cella[62..48].cout, inter_regrs_couta[3].cout, pad_cella[46..36].cout, inter_regrs_couta[2].cout, pad_cella[34..24].cout, inter_regrs_couta[1].cout, pad_cella[22..12].cout, inter_regrs_couta[0].cout, pad_cella[10..0].cout, B"0");
+	pad_cella[].datad = ( pad_cell_ffa[191..0].q, add_sub_cell_ffa[].q);
+	pad_cella[].dataf = B"0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
+	result[63..0] = pad_cell_ffa[255..192].q;
+END;
+--VALID FILE

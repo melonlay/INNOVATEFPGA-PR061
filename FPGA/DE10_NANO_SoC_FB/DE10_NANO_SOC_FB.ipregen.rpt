@@ -1,0 +1,639 @@
+IP Upgrade report for DE10_NANO_SOC_FB
+Tue Oct 08 16:38:02 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Failed - Tue Oct 08 16:38:02 2019           ;
+; Quartus Prime Version        ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                ; DE10_NANO_SOC_FB                            ;
+; Top-level Entity Name        ; DE10_NANO_SOC_FB                            ;
+; Family                       ; Cyclone V                                   ;
++------------------------------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                                                 ;
++-------------+----------------+---------+-------------------------------------+----------------------+-------------------------------------+---------+
+; Entity Name ; Component Name ; Version ; Original Source File                ; Generation File Path ; New Source File                     ; Message ;
++-------------+----------------+---------+-------------------------------------+----------------------+-------------------------------------+---------+
+; soc_system  ; Qsys           ; 18.1    ; soc_system/synthesis/soc_system.qip ; soc_system.qsys      ; soc_system/synthesis/soc_system.qip ;         ;
++-------------+----------------+---------+-------------------------------------+----------------------+-------------------------------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "soc_system.qsys" to "soc_system.BAK.qsys"
+Info (11902): Backing up file "soc_system/synthesis/soc_system.v" to "soc_system.BAK.v"
+Info (11837): Started upgrading IP component Qsys with file "soc_system.qsys"
+Info: 2019.10.08.16:35:33 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info: 2019.10.08.16:35:33 Info: Finished upgrading the ip cores
+Info: 2019.10.08.16:35:47 Info: Saving generation log to C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system
+Info: 2019.10.08.16:35:47 Info: Starting: Create simulation model
+Info: 2019.10.08.16:35:47 Info: qsys-generate C:\Users\Well\Downloads\DE10_NANO_SoC_FB\soc_system.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=C:\Users\Well\Downloads\DE10_NANO_SoC_FB\soc_system\simulation --family="Cyclone V" --part=5CSEBA6U23I7
+Info: 2019.10.08.16:35:47 Info: Loading DE10_NANO_SoC_FB
+Info: 2019.10.08.16:35:47 Info: Reading input file
+Info: 2019.10.08.16:35:47 Info: Adding Data_type [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module Data_type
+Info: 2019.10.08.16:35:47 Info: Adding Finish_signal [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module Finish_signal
+Info: 2019.10.08.16:35:47 Info: Adding ILC [interrupt_latency_counter 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module ILC
+Info: 2019.10.08.16:35:47 Info: Adding Input_addr [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module Input_addr
+Info: 2019.10.08.16:35:47 Info: Adding Output_addr [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module Output_addr
+Info: 2019.10.08.16:35:47 Info: Adding Weight_addr [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module Weight_addr
+Info: 2019.10.08.16:35:47 Info: Adding address_span_extender_0 [altera_address_span_extender 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module address_span_extender_0
+Info: 2019.10.08.16:35:47 Info: Adding alt_vip_itc_0 [alt_vip_itc 14.0]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module alt_vip_itc_0
+Info: 2019.10.08.16:35:47 Info: Adding alt_vip_vfr_hdmi [alt_vip_vfr 14.0]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module alt_vip_vfr_hdmi
+Info: 2019.10.08.16:35:47 Info: Adding button_pio [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module button_pio
+Info: 2019.10.08.16:35:47 Info: Adding clk_0 [clock_source 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module clk_0
+Info: 2019.10.08.16:35:47 Info: Adding clock_bridge_0 [altera_clock_bridge 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module clock_bridge_0
+Info: 2019.10.08.16:35:47 Info: Adding dipsw_pio [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module dipsw_pio
+Info: 2019.10.08.16:35:47 Info: Adding fpga_only_master [altera_jtag_avalon_master 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module fpga_only_master
+Info: 2019.10.08.16:35:47 Info: Adding hps_0 [altera_hps 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module hps_0
+Info: 2019.10.08.16:35:47 Info: Adding hps_only_master [altera_jtag_avalon_master 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module hps_only_master
+Info: 2019.10.08.16:35:47 Info: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module jtag_uart
+Info: 2019.10.08.16:35:47 Info: Adding led_pio [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module led_pio
+Info: 2019.10.08.16:35:47 Info: Adding mm_bridge_0 [altera_avalon_mm_bridge 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module mm_bridge_0
+Info: 2019.10.08.16:35:47 Info: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Info: 2019.10.08.16:35:47 Info: Parameterizing module sysid_qsys
+Info: 2019.10.08.16:35:47 Info: Building connections
+Info: 2019.10.08.16:35:47 Info: Parameterizing connections
+Info: 2019.10.08.16:35:47 Info: Validating
+Info: 2019.10.08.16:35:52 Info: Done reading input file
+Info: 2019.10.08.16:35:54 Info: soc_system.Finish_signal: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: 2019.10.08.16:35:54 Warning: soc_system.alt_vip_vfr_hdmi: The module properties SIMULATION_MODEL_IN_VERILOG and SIMULATION_MODEL_IN_VHDL can not both be set when using the SIMULATION file property: src_hdl/alt_vipvfr131_vfr.v, src_hdl/alt_vipvfr131_vfr_controller.v, src_hdl/alt_vipvfr131_vfr_control_packet_encoder.v, src_hdl/alt_vipvfr131_prc.v, src_hdl/alt_vipvfr131_prc_core.v, src_hdl/alt_vipvfr131_prc_read_master.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_package.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_master.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_unpack_data.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_slave.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_stream_output.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_pulling_width_adapter.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_general_fifo.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_fifo_usedw_calculator.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_gray_clock_crosser.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_std_logic_vector_delay.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_one_bit_delay.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_logic_fifo.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl
+Info: 2019.10.08.16:35:54 Info: soc_system.button_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: 2019.10.08.16:35:54 Info: soc_system.dipsw_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: 2019.10.08.16:35:54 Warning: soc_system.hps_0: Setting the slave port width of interface f2h_sdram0 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Info: 2019.10.08.16:35:54 Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: 2019.10.08.16:35:54 Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Info: 2019.10.08.16:35:54 Info: soc_system.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2019.10.08.16:35:54 Info: soc_system.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: 2019.10.08.16:35:54 Info: soc_system.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Warning: 2019.10.08.16:35:54 Warning: soc_system.alt_vip_vfr_hdmi: Interrupt sender alt_vip_vfr_hdmi.interrupt_sender is not connected to an interrupt receiver
+Info: 2019.10.08.16:35:55 Info: soc_system: Generating soc_system "soc_system" for SIM_VERILOG
+Info: 2019.10.08.16:35:58 Info: Interconnect is inserted between master address_span_extender_0.expanded_master and slave hps_0.f2h_sdram0_data because the master has address signal 32 bit wide, but the slave is 30 bit wide.
+Info: 2019.10.08.16:35:58 Info: Interconnect is inserted between master address_span_extender_0.expanded_master and slave hps_0.f2h_sdram0_data because the master has burstcount signal 1 bit wide, but the slave is 8 bit wide.
+Info: 2019.10.08.16:35:59 Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave mm_bridge_0.s0 because the master is of type axi and the slave is of type avalon.
+Info: 2019.10.08.16:36:00 Info: Inserting clock-crossing logic between cmd_demux.src2 and cmd_mux_002.sink0
+Info: 2019.10.08.16:36:00 Info: Inserting clock-crossing logic between rsp_demux_002.src0 and rsp_mux.sink2
+Warning: 2019.10.08.16:36:01 Warning: hps_0.f2h_irq0: Cannot connect clock for irq_mapper_001.sender
+Warning: 2019.10.08.16:36:01 Warning: hps_0.f2h_irq0: Cannot connect reset for irq_mapper_001.sender
+Warning: 2019.10.08.16:36:01 Warning: hps_0.f2h_irq1: Cannot connect clock for irq_mapper_002.sender
+Warning: 2019.10.08.16:36:01 Warning: hps_0.f2h_irq1: Cannot connect reset for irq_mapper_002.sender
+Info: 2019.10.08.16:36:05 Info: Data_type: Starting RTL generation for module 'soc_system_Data_type'
+Info: 2019.10.08.16:36:05 Info: Data_type:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_Data_type --dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0002_Data_type_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0002_Data_type_gen//soc_system_Data_type_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0002_Data_type_gen
+Info: 2019.10.08.16:36:05 Info: Data_type: Done RTL generation for module 'soc_system_Data_type'
+Info: 2019.10.08.16:36:05 Info: Data_type: "soc_system" instantiated altera_avalon_pio "Data_type"
+Info: 2019.10.08.16:36:05 Info: Finish_signal: Starting RTL generation for module 'soc_system_Finish_signal'
+Info: 2019.10.08.16:36:05 Info: Finish_signal:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_Finish_signal --dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0003_Finish_signal_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0003_Finish_signal_gen//soc_system_Finish_signal_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0003_Finish_signal_gen
+Info: 2019.10.08.16:36:05 Info: Finish_signal: Done RTL generation for module 'soc_system_Finish_signal'
+Info: 2019.10.08.16:36:05 Info: Finish_signal: "soc_system" instantiated altera_avalon_pio "Finish_signal"
+Info: 2019.10.08.16:36:05 Info: ILC: "soc_system" instantiated interrupt_latency_counter "ILC"
+Info: 2019.10.08.16:36:05 Info: address_span_extender_0: "soc_system" instantiated altera_address_span_extender "address_span_extender_0"
+Info: 2019.10.08.16:36:08 Info: alt_vip_itc_0: "soc_system" instantiated alt_vip_itc "alt_vip_itc_0"
+Info: 2019.10.08.16:36:11 Info: alt_vip_vfr_hdmi: Generating Verilog simulation model
+Warning: 2019.10.08.16:36:22 Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Warning: 2019.10.08.16:36:22 Warning: Verilog Module Declaration warning at alt_vipvfr131_prc_read_master.v(47): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "alt_vipvfr131_prc_read_master" File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL Implicit Net warning at alt_vipvfr131_prc.v(142): created implicit net for "master_clock" File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL Implicit Net warning at alt_vipvfr131_prc.v(143): created implicit net for "master_reset" File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: VHDL Subtype or Type Declaration warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(178): subtype or type has null range File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: VHDL Subtype or Type Declaration warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(181): subtype or type has null range File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: VHDL Subtype or Type Declaration warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(261): subtype or type has null range File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: VHDL Subtype or Type Declaration warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(262): subtype or type has null range File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(178): object "wdata_fifo_wrusedw" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(179): object "wdata_fifo_full" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(180): object "wdata_fifo_almost_full" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(182): object "wdata_fifo_empty" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(183): object "wdata_fifo_almost_empty" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(184): object "wdata_fifo_wrreq" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(185): object "wdata_fifo_data" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(186): object "wdata_fifo_rdreq" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(187): object "wdata_fifo_q" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(189): object "wdata_fifo_empty_next" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(193): object "rdata_fifo_full" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(194): object "rdata_fifo_almost_full" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(195): object "rdata_fifo_rdusedw" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(197): object "rdata_fifo_almost_empty" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(212): object "cmd_fifo_wrusedw" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(214): object "cmd_fifo_almost_full" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(215): object "cmd_fifo_rdusedw" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(217): object "cmd_fifo_almost_empty" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(229): object "writing" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(229): object "reading" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(239): object "wdata_en" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: VHDL Signal Declaration warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(260): used implicit default value for signal "byte_enable_next" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(424): ignored assignment of value to null range File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(425): ignored assignment of value to null range File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(437): ignored assignment of value to null range File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: VHDL Process Statement warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(641): inferring latch(es) for signal or variable "byte_enable", which holds its previous value in one or more paths through the process File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_general_fifo.vhd(230): object "ram_fifo_empty" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_ram_fifo.vhd(129): object "port_a_q" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_general_fifo.vhd(264): object "logic_fifo_full" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: VHDL Subtype or Type Declaration warning at alt_vipvfr131_common_gray_clock_crosser.vhd(70): subtype or type has null range File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_ram_fifo.vhd(129): object "port_a_q" assigned a value but never read File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL Always Construct warning at alt_vipvfr131_common_avalon_mm_slave.v(45): inferring latch(es) for variable "interrupt_register", which holds its previous value in one or more paths through the always construct File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL assignment warning at alt_vipvfr131_common_avalon_mm_slave.v(72): truncated value with size 35 to match size of target (32) File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL Always Construct warning at alt_vipvfr131_common_avalon_mm_slave.v(45): inferring latch(es) for variable "interrupt_register", which holds its previous value in one or more paths through the always construct File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL assignment warning at alt_vipvfr131_common_avalon_mm_slave.v(72): truncated value with size 49 to match size of target (32) File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL Always Construct warning at alt_vipvfr131_vfr_control_packet_encoder.v(62): inferring latch(es) for variable "control_data", which holds its previous value in one or more paths through the always construct File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Verilog HDL assignment warning at alt_vipvfr131_vfr_control_packet_encoder.v(82): truncated value with size 32 to match size of target (4) File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Net "control_header_state[7..5]" at alt_vipvfr131_vfr_control_packet_encoder.v(58) has no driver or initial value, using a default initial value '0' File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Net "control_header_state[3..1]" at alt_vipvfr131_vfr_control_packet_encoder.v(58) has no driver or initial value, using a default initial value '0' File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Net "control_header_data[7..5]" at alt_vipvfr131_vfr_control_packet_encoder.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Warning: 2019.10.08.16:36:22 Warning: Net "control_header_data[3..1]" at alt_vipvfr131_vfr_control_packet_encoder.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0011_sopcqmap
+Info: 2019.10.08.16:36:22 Info: alt_vip_vfr_hdmi: Generated simulation model soc_system_alt_vip_vfr_hdmi.vo
+Info: 2019.10.08.16:36:22 Info: alt_vip_vfr_hdmi: "soc_system" instantiated alt_vip_vfr "alt_vip_vfr_hdmi"
+Info: 2019.10.08.16:36:22 Info: button_pio: Starting RTL generation for module 'soc_system_button_pio'
+Info: 2019.10.08.16:36:22 Info: button_pio:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_button_pio --dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0013_button_pio_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0013_button_pio_gen//soc_system_button_pio_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0013_button_pio_gen
+Info: 2019.10.08.16:36:22 Info: button_pio: Done RTL generation for module 'soc_system_button_pio'
+Info: 2019.10.08.16:36:22 Info: button_pio: "soc_system" instantiated altera_avalon_pio "button_pio"
+Info: 2019.10.08.16:36:22 Info: dipsw_pio: Starting RTL generation for module 'soc_system_dipsw_pio'
+Info: 2019.10.08.16:36:22 Info: dipsw_pio:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_dipsw_pio --dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0014_dipsw_pio_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0014_dipsw_pio_gen//soc_system_dipsw_pio_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0014_dipsw_pio_gen
+Info: 2019.10.08.16:36:23 Info: dipsw_pio: Done RTL generation for module 'soc_system_dipsw_pio'
+Info: 2019.10.08.16:36:23 Info: dipsw_pio: "soc_system" instantiated altera_avalon_pio "dipsw_pio"
+Info: 2019.10.08.16:36:23 Info: fpga_only_master: "soc_system" instantiated altera_jtag_avalon_master "fpga_only_master"
+Info: 2019.10.08.16:36:23 Info: hps_0: "Running  for module: hps_0"
+Warning: 2019.10.08.16:36:23 Warning: hps_0: Setting the slave port width of interface f2h_sdram0 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Info: 2019.10.08.16:36:23 Info: hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: 2019.10.08.16:36:24 Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Info: 2019.10.08.16:36:25 Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: 2019.10.08.16:36:25 Info: jtag_uart: Starting RTL generation for module 'soc_system_jtag_uart'
+Info: 2019.10.08.16:36:25 Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=soc_system_jtag_uart --dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0015_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0015_jtag_uart_gen//soc_system_jtag_uart_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0015_jtag_uart_gen
+Info: 2019.10.08.16:36:25 Info: jtag_uart: Done RTL generation for module 'soc_system_jtag_uart'
+Info: 2019.10.08.16:36:25 Info: jtag_uart: "soc_system" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: 2019.10.08.16:36:25 Info: led_pio: Starting RTL generation for module 'soc_system_led_pio'
+Info: 2019.10.08.16:36:25 Info: led_pio:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_led_pio --dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0016_led_pio_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0016_led_pio_gen//soc_system_led_pio_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0016_led_pio_gen
+Info: 2019.10.08.16:36:25 Info: led_pio: Done RTL generation for module 'soc_system_led_pio'
+Info: 2019.10.08.16:36:25 Info: led_pio: "soc_system" instantiated altera_avalon_pio "led_pio"
+Info: 2019.10.08.16:36:25 Info: mm_bridge_0: "soc_system" instantiated altera_avalon_mm_bridge "mm_bridge_0"
+Info: 2019.10.08.16:36:25 Info: sysid_qsys: "soc_system" instantiated altera_avalon_sysid_qsys "sysid_qsys"
+Info: 2019.10.08.16:36:26 Info: mm_interconnect_0: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2019.10.08.16:36:27 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:27 Info: mm_interconnect_1: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: 2019.10.08.16:36:27 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:28 Info: mm_interconnect_2: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: 2019.10.08.16:36:31 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:31 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:31 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:31 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:31 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:31 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:31 Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:32 Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:32 Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:32 Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:32 Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:32 Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:36:34 Info: mm_interconnect_3: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_3"
+Info: 2019.10.08.16:36:34 Info: irq_mapper: "soc_system" instantiated altera_irq_mapper "irq_mapper"
+Info: 2019.10.08.16:36:34 Info: irq_mapper_001: "soc_system" instantiated altera_irq_mapper "irq_mapper_001"
+Info: 2019.10.08.16:36:34 Info: irq_mapper_002: "soc_system" instantiated altera_irq_mapper "irq_mapper_002"
+Info: 2019.10.08.16:36:34 Info: rst_controller: "soc_system" instantiated altera_reset_controller "rst_controller"
+Info: 2019.10.08.16:36:34 Info: jtag_phy_embedded_in_jtag_master: "fpga_only_master" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: 2019.10.08.16:36:34 Info: timing_adt: "fpga_only_master" instantiated timing_adapter "timing_adt"
+Info: 2019.10.08.16:36:34 Info: fifo: "fpga_only_master" instantiated altera_avalon_sc_fifo "fifo"
+Info: 2019.10.08.16:36:34 Info: b2p: "fpga_only_master" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: 2019.10.08.16:36:34 Info: p2b: "fpga_only_master" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: 2019.10.08.16:36:34 Info: transacto: "fpga_only_master" instantiated altera_avalon_packets_to_master "transacto"
+Info: 2019.10.08.16:36:34 Info: b2p_adapter: "fpga_only_master" instantiated channel_adapter "b2p_adapter"
+Info: 2019.10.08.16:36:34 Info: p2b_adapter: "fpga_only_master" instantiated channel_adapter "p2b_adapter"
+Info: 2019.10.08.16:37:03 Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: 2019.10.08.16:37:03 Info: alt_vip_vfr_hdmi_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "alt_vip_vfr_hdmi_avalon_master_translator"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: alt_vip_vfr_hdmi_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "alt_vip_vfr_hdmi_avalon_master_agent"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: hps_0_f2h_axi_slave_agent: "mm_interconnect_0" instantiated altera_merlin_axi_slave_ni "hps_0_f2h_axi_slave_agent"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2019.10.08.16:37:03 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: 2019.10.08.16:37:03 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2019.10.08.16:37:03 Info: alt_vip_vfr_hdmi_avalon_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "alt_vip_vfr_hdmi_avalon_master_limiter"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: hps_0_f2h_axi_slave_wr_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "hps_0_f2h_axi_slave_wr_burst_adapter"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2019.10.08.16:37:03 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: 2019.10.08.16:37:03 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: hps_only_master_master_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "hps_only_master_master_cmd_width_adapter"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: hps_0_f2h_sdram0_data_translator: "mm_interconnect_1" instantiated altera_merlin_slave_translator "hps_0_f2h_sdram0_data_translator"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: hps_0_f2h_sdram0_data_agent: "mm_interconnect_1" instantiated altera_merlin_slave_agent "hps_0_f2h_sdram0_data_agent"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: 2019.10.08.16:37:03 Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: 2019.10.08.16:37:03 Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2019.10.08.16:37:03 Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: avalon_st_adapter: "mm_interconnect_1" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2019.10.08.16:37:03 Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_2" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: router: "mm_interconnect_2" instantiated altera_merlin_router "router"
+Info: 2019.10.08.16:37:03 Info: router_002: "mm_interconnect_2" instantiated altera_merlin_router "router_002"
+Info: 2019.10.08.16:37:03 Info: cmd_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2019.10.08.16:37:03 Info: cmd_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: rsp_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2019.10.08.16:37:03 Info: rsp_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: router: "mm_interconnect_3" instantiated altera_merlin_router "router"
+Info: 2019.10.08.16:37:03 Info: router_001: "mm_interconnect_3" instantiated altera_merlin_router "router_001"
+Info: 2019.10.08.16:37:03 Info: router_002: "mm_interconnect_3" instantiated altera_merlin_router "router_002"
+Info: 2019.10.08.16:37:03 Info: router_004: "mm_interconnect_3" instantiated altera_merlin_router "router_004"
+Info: 2019.10.08.16:37:03 Info: cmd_demux: "mm_interconnect_3" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2019.10.08.16:37:03 Info: cmd_demux_001: "mm_interconnect_3" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: 2019.10.08.16:37:03 Info: cmd_mux: "mm_interconnect_3" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: cmd_mux_002: "mm_interconnect_3" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: rsp_demux: "mm_interconnect_3" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2019.10.08.16:37:03 Info: rsp_demux_002: "mm_interconnect_3" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: 2019.10.08.16:37:03 Info: rsp_mux: "mm_interconnect_3" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: rsp_mux_001: "mm_interconnect_3" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: crosser: "mm_interconnect_3" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:03 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:04 Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: 2019.10.08.16:37:04 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:04 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:04 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:04 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:04 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:04 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:04 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation/submodules
+Info: 2019.10.08.16:37:04 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2019.10.08.16:37:04 Info: soc_system: Done "soc_system" with 76 modules, 217 files
+Info: 2019.10.08.16:37:04 Info: qsys-generate succeeded.
+Info: 2019.10.08.16:37:04 Info: Finished: Create simulation model
+Info: 2019.10.08.16:37:04 Info: Starting: Create Modelsim Project.
+Info: 2019.10.08.16:37:04 Info: sim-script-gen --spd=C:\Users\Well\Downloads\DE10_NANO_SoC_FB\soc_system\soc_system.spd --output-directory=C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation
+Info: 2019.10.08.16:37:04 Info: Doing: ip-make-simscript --spd=C:\Users\Well\Downloads\DE10_NANO_SoC_FB\soc_system\soc_system.spd --output-directory=C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation
+Info: 2019.10.08.16:37:04 Info: Generating the following file(s) for MODELSIM simulator in C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation
+Info: 2019.10.08.16:37:04 Info:     mentor
+Info: 2019.10.08.16:37:04 Info: Generating the following file(s) for VCS simulator in C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation
+Info: 2019.10.08.16:37:04 Info:     synopsys/vcs
+Info: 2019.10.08.16:37:04 Info: Generating the following file(s) for VCSMX simulator in C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation
+Info: 2019.10.08.16:37:04 Info:     synopsys/vcsmx
+Info: 2019.10.08.16:37:04 Info:     synopsys/vcsmx
+Info: 2019.10.08.16:37:04 Info: Generating the following file(s) for NCSIM simulator in C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation
+Info: 2019.10.08.16:37:04 Info:     cadence
+Info: 2019.10.08.16:37:04 Info:     cadence
+Info: 2019.10.08.16:37:04 Info:     cadence
+Info: 2019.10.08.16:37:04 Info:     58 .cds.lib files in cadence/cds_libs
+Info: 2019.10.08.16:37:04 Info: Generating the following file(s) for RIVIERA simulator in C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation
+Info: 2019.10.08.16:37:04 Info:     aldec
+Info: 2019.10.08.16:37:04 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/simulation
+Info: 2019.10.08.16:37:04 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: 2019.10.08.16:37:04 Info: Finished: Create Modelsim Project.
+Info: 2019.10.08.16:37:04 Info: Starting: Create block symbol file (.bsf)
+Info: 2019.10.08.16:37:04 Info: qsys-generate C:\Users\Well\Downloads\DE10_NANO_SoC_FB\soc_system.qsys --block-symbol-file --output-directory=C:\Users\Well\Downloads\DE10_NANO_SoC_FB\soc_system --family="Cyclone V" --part=5CSEBA6U23I7
+Info: 2019.10.08.16:37:04 Info: Loading DE10_NANO_SoC_FB
+Info: 2019.10.08.16:37:04 Info: Reading input file
+Info: 2019.10.08.16:37:04 Info: Adding Data_type [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module Data_type
+Info: 2019.10.08.16:37:04 Info: Adding Finish_signal [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module Finish_signal
+Info: 2019.10.08.16:37:04 Info: Adding ILC [interrupt_latency_counter 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module ILC
+Info: 2019.10.08.16:37:04 Info: Adding Input_addr [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module Input_addr
+Info: 2019.10.08.16:37:04 Info: Adding Output_addr [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module Output_addr
+Info: 2019.10.08.16:37:04 Info: Adding Weight_addr [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module Weight_addr
+Info: 2019.10.08.16:37:04 Info: Adding address_span_extender_0 [altera_address_span_extender 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module address_span_extender_0
+Info: 2019.10.08.16:37:04 Info: Adding alt_vip_itc_0 [alt_vip_itc 14.0]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module alt_vip_itc_0
+Info: 2019.10.08.16:37:04 Info: Adding alt_vip_vfr_hdmi [alt_vip_vfr 14.0]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module alt_vip_vfr_hdmi
+Info: 2019.10.08.16:37:04 Info: Adding button_pio [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module button_pio
+Info: 2019.10.08.16:37:04 Info: Adding clk_0 [clock_source 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module clk_0
+Info: 2019.10.08.16:37:04 Info: Adding clock_bridge_0 [altera_clock_bridge 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module clock_bridge_0
+Info: 2019.10.08.16:37:04 Info: Adding dipsw_pio [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module dipsw_pio
+Info: 2019.10.08.16:37:04 Info: Adding fpga_only_master [altera_jtag_avalon_master 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module fpga_only_master
+Info: 2019.10.08.16:37:04 Info: Adding hps_0 [altera_hps 18.1]
+Info: 2019.10.08.16:37:04 Info: Parameterizing module hps_0
+Info: 2019.10.08.16:37:05 Info: Adding hps_only_master [altera_jtag_avalon_master 18.1]
+Info: 2019.10.08.16:37:05 Info: Parameterizing module hps_only_master
+Info: 2019.10.08.16:37:05 Info: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Info: 2019.10.08.16:37:05 Info: Parameterizing module jtag_uart
+Info: 2019.10.08.16:37:05 Info: Adding led_pio [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:05 Info: Parameterizing module led_pio
+Info: 2019.10.08.16:37:05 Info: Adding mm_bridge_0 [altera_avalon_mm_bridge 18.1]
+Info: 2019.10.08.16:37:05 Info: Parameterizing module mm_bridge_0
+Info: 2019.10.08.16:37:05 Info: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Info: 2019.10.08.16:37:05 Info: Parameterizing module sysid_qsys
+Info: 2019.10.08.16:37:05 Info: Building connections
+Info: 2019.10.08.16:37:05 Info: Parameterizing connections
+Info: 2019.10.08.16:37:05 Info: Validating
+Info: 2019.10.08.16:37:10 Info: Done reading input file
+Info: 2019.10.08.16:37:11 Info: soc_system.Finish_signal: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: 2019.10.08.16:37:11 Warning: soc_system.alt_vip_vfr_hdmi: The module properties SIMULATION_MODEL_IN_VERILOG and SIMULATION_MODEL_IN_VHDL can not both be set when using the SIMULATION file property: src_hdl/alt_vipvfr131_vfr.v, src_hdl/alt_vipvfr131_vfr_controller.v, src_hdl/alt_vipvfr131_vfr_control_packet_encoder.v, src_hdl/alt_vipvfr131_prc.v, src_hdl/alt_vipvfr131_prc_core.v, src_hdl/alt_vipvfr131_prc_read_master.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_package.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_master.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_unpack_data.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_slave.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_stream_output.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_pulling_width_adapter.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_general_fifo.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_fifo_usedw_calculator.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_gray_clock_crosser.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_std_logic_vector_delay.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_one_bit_delay.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_logic_fifo.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl
+Info: 2019.10.08.16:37:11 Info: soc_system.button_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+2019.10.08.16:37:11 Info: soc_system.dipsw_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: 2019.10.08.16:37:11 Warning: soc_system.hps_0: Setting the slave port width of interface f2h_sdram0 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Info: 2019.10.08.16:37:11 Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: 2019.10.08.16:37:11 Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Info: 2019.10.08.16:37:11 Info: soc_system.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2019.10.08.16:37:11 Info: soc_system.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: 2019.10.08.16:37:11 Info: soc_system.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Warning: 2019.10.08.16:37:11 Warning: soc_system.alt_vip_vfr_hdmi: Interrupt sender alt_vip_vfr_hdmi.interrupt_sender is not connected to an interrupt receiver
+Info: 2019.10.08.16:37:12 Info: qsys-generate succeeded.
+Info: 2019.10.08.16:37:12 Info: Finished: Create block symbol file (.bsf)
+2019.10.08.16:37:12 Info:
+Info: 2019.10.08.16:37:12 Info: Starting: Create HDL design files for synthesis
+Info: 2019.10.08.16:37:12 Info: qsys-generate C:\Users\Well\Downloads\DE10_NANO_SoC_FB\soc_system.qsys --synthesis=VERILOG --output-directory=C:\Users\Well\Downloads\DE10_NANO_SoC_FB\soc_system\synthesis --family="Cyclone V" --part=5CSEBA6U23I7
+Info: 2019.10.08.16:37:12 Info: Loading DE10_NANO_SoC_FB
+Info: 2019.10.08.16:37:12 Info: Reading input file
+Info: 2019.10.08.16:37:12 Info: Adding Data_type [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module Data_type
+Info: 2019.10.08.16:37:12 Info: Adding Finish_signal [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module Finish_signal
+Info: 2019.10.08.16:37:12 Info: Adding ILC [interrupt_latency_counter 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module ILC
+Info: 2019.10.08.16:37:12 Info: Adding Input_addr [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module Input_addr
+Info: 2019.10.08.16:37:12 Info: Adding Output_addr [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module Output_addr
+Info: 2019.10.08.16:37:12 Info: Adding Weight_addr [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module Weight_addr
+Info: 2019.10.08.16:37:12 Info: Adding address_span_extender_0 [altera_address_span_extender 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module address_span_extender_0
+Info: 2019.10.08.16:37:12 Info: Adding alt_vip_itc_0 [alt_vip_itc 14.0]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module alt_vip_itc_0
+Info: 2019.10.08.16:37:12 Info: Adding alt_vip_vfr_hdmi [alt_vip_vfr 14.0]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module alt_vip_vfr_hdmi
+Info: 2019.10.08.16:37:12 Info: Adding button_pio [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module button_pio
+Info: 2019.10.08.16:37:12 Info: Adding clk_0 [clock_source 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module clk_0
+Info: 2019.10.08.16:37:12 Info: Adding clock_bridge_0 [altera_clock_bridge 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module clock_bridge_0
+Info: 2019.10.08.16:37:12 Info: Adding dipsw_pio [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module dipsw_pio
+Info: 2019.10.08.16:37:12 Info: Adding fpga_only_master [altera_jtag_avalon_master 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module fpga_only_master
+Info: 2019.10.08.16:37:12 Info: Adding hps_0 [altera_hps 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module hps_0
+Info: 2019.10.08.16:37:12 Info: Adding hps_only_master [altera_jtag_avalon_master 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module hps_only_master
+Info: 2019.10.08.16:37:12 Info: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module jtag_uart
+Info: 2019.10.08.16:37:12 Info: Adding led_pio [altera_avalon_pio 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module led_pio
+Info: 2019.10.08.16:37:12 Info: Adding mm_bridge_0 [altera_avalon_mm_bridge 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module mm_bridge_0
+Info: 2019.10.08.16:37:12 Info: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Info: 2019.10.08.16:37:12 Info: Parameterizing module sysid_qsys
+Info: 2019.10.08.16:37:12 Info: Building connections
+Info: 2019.10.08.16:37:12 Info: Parameterizing connections
+Info: 2019.10.08.16:37:12 Info: Validating
+Info: 2019.10.08.16:37:17 Info: Done reading input file
+Info: 2019.10.08.16:37:19 Info: soc_system.Finish_signal: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: 2019.10.08.16:37:19 Warning: soc_system.alt_vip_vfr_hdmi: The module properties SIMULATION_MODEL_IN_VERILOG and SIMULATION_MODEL_IN_VHDL can not both be set when using the SIMULATION file property: src_hdl/alt_vipvfr131_vfr.v, src_hdl/alt_vipvfr131_vfr_controller.v, src_hdl/alt_vipvfr131_vfr_control_packet_encoder.v, src_hdl/alt_vipvfr131_prc.v, src_hdl/alt_vipvfr131_prc_core.v, src_hdl/alt_vipvfr131_prc_read_master.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_package.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_master.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_unpack_data.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_slave.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_stream_output.v, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_pulling_width_adapter.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_general_fifo.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_fifo_usedw_calculator.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_gray_clock_crosser.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_std_logic_vector_delay.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_one_bit_delay.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_logic_fifo.vhd, C:/intelfpga_lite/18.1/ip/altera/frame_reader/common_hdl
+Info: 2019.10.08.16:37:19 Info: soc_system.button_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+2019.10.08.16:37:19 Info: soc_system.dipsw_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: 2019.10.08.16:37:19 Warning: soc_system.hps_0: Setting the slave port width of interface f2h_sdram0 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Info: 2019.10.08.16:37:19 Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: 2019.10.08.16:37:19 Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Info: 2019.10.08.16:37:19 Info: soc_system.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2019.10.08.16:37:19 Info: soc_system.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: 2019.10.08.16:37:19 Info: soc_system.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Warning: 2019.10.08.16:37:19 Warning: soc_system.alt_vip_vfr_hdmi: Interrupt sender alt_vip_vfr_hdmi.interrupt_sender is not connected to an interrupt receiver
+Info: 2019.10.08.16:37:20 Info: soc_system: Generating soc_system "soc_system" for QUARTUS_SYNTH
+Info: 2019.10.08.16:37:23 Info: Interconnect is inserted between master address_span_extender_0.expanded_master and slave hps_0.f2h_sdram0_data because the master has address signal 32 bit wide, but the slave is 30 bit wide.
+Info: 2019.10.08.16:37:23 Info: Interconnect is inserted between master address_span_extender_0.expanded_master and slave hps_0.f2h_sdram0_data because the master has burstcount signal 1 bit wide, but the slave is 8 bit wide.
+Info: 2019.10.08.16:37:23 Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave mm_bridge_0.s0 because the master is of type axi and the slave is of type avalon.
+Info: 2019.10.08.16:37:24 Info: Inserting clock-crossing logic between cmd_demux.src2 and cmd_mux_002.sink0
+Info: 2019.10.08.16:37:24 Info: Inserting clock-crossing logic between rsp_demux_002.src0 and rsp_mux.sink2
+Warning: 2019.10.08.16:37:25 Warning: hps_0.f2h_irq0: Cannot connect clock for irq_mapper_001.sender
+Warning: 2019.10.08.16:37:25 Warning: hps_0.f2h_irq0: Cannot connect reset for irq_mapper_001.sender
+Warning: 2019.10.08.16:37:25 Warning: hps_0.f2h_irq1: Cannot connect clock for irq_mapper_002.sender
+Warning: 2019.10.08.16:37:25 Warning: hps_0.f2h_irq1: Cannot connect reset for irq_mapper_002.sender
+Info: 2019.10.08.16:37:28 Info: Data_type: Starting RTL generation for module 'soc_system_Data_type'
+Info: 2019.10.08.16:37:28 Info: Data_type:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_Data_type --dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0075_Data_type_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0075_Data_type_gen/
+Info: 2019.10.08.16:37:29 Info: Data_type: Done RTL generation for module 'soc_system_Data_type'
+Info: 2019.10.08.16:37:29 Info: Data_type: "soc_system" instantiated altera_avalon_pio "Data_type"
+Info: 2019.10.08.16:37:29 Info: Finish_signal: Starting RTL generation for module 'soc_system_Finish_signal'
+Info: 2019.10.08.16:37:29 Info: Finish_signal:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_Finish_signal --dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0076_Finish_signal_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0076_Finish_signal_gen/
+Info: 2019.10.08.16:37:29 Info: Finish_signal: Done RTL generation for module 'soc_system_Finish_signal'
+Info: 2019.10.08.16:37:29 Info: Finish_signal: "soc_system" instantiated altera_avalon_pio "Finish_signal"
+Info: 2019.10.08.16:37:29 Info: ILC: "soc_system" instantiated interrupt_latency_counter "ILC"
+Info: 2019.10.08.16:37:29 Info: address_span_extender_0: "soc_system" instantiated altera_address_span_extender "address_span_extender_0"
+Info: 2019.10.08.16:37:29 Info: alt_vip_itc_0: "soc_system" instantiated alt_vip_itc "alt_vip_itc_0"
+Info: 2019.10.08.16:37:29 Info: alt_vip_vfr_hdmi: "soc_system" instantiated alt_vip_vfr "alt_vip_vfr_hdmi"
+Info: 2019.10.08.16:37:29 Info: button_pio: Starting RTL generation for module 'soc_system_button_pio'
+Info: 2019.10.08.16:37:29 Info: button_pio:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_button_pio --dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0079_button_pio_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0079_button_pio_gen/
+Info: 2019.10.08.16:37:29 Info: button_pio: Done RTL generation for module 'soc_system_button_pio'
+Info: 2019.10.08.16:37:29 Info: button_pio: "soc_system" instantiated altera_avalon_pio "button_pio"
+Info: 2019.10.08.16:37:29 Info: dipsw_pio: Starting RTL generation for module 'soc_system_dipsw_pio'
+Info: 2019.10.08.16:37:29 Info: dipsw_pio:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_dipsw_pio --dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0080_dipsw_pio_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0080_dipsw_pio_gen/
+Info: 2019.10.08.16:37:29 Info: dipsw_pio: Done RTL generation for module 'soc_system_dipsw_pio'
+Info: 2019.10.08.16:37:29 Info: dipsw_pio: "soc_system" instantiated altera_avalon_pio "dipsw_pio"
+Info: 2019.10.08.16:37:29 Info: fpga_only_master: "soc_system" instantiated altera_jtag_avalon_master "fpga_only_master"
+Info: 2019.10.08.16:37:29 Info: hps_0: "Running  for module: hps_0"
+Warning: 2019.10.08.16:37:30 Warning: hps_0: Setting the slave port width of interface f2h_sdram0 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Info: 2019.10.08.16:37:30 Info: hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: 2019.10.08.16:37:30 Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Info: 2019.10.08.16:37:31 Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: 2019.10.08.16:37:31 Info: jtag_uart: Starting RTL generation for module 'soc_system_jtag_uart'
+Info: 2019.10.08.16:37:31 Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=soc_system_jtag_uart --dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0081_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0081_jtag_uart_gen/
+Info: 2019.10.08.16:37:31 Info: jtag_uart: Done RTL generation for module 'soc_system_jtag_uart'
+Info: 2019.10.08.16:37:31 Info: jtag_uart: "soc_system" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: 2019.10.08.16:37:31 Info: led_pio: Starting RTL generation for module 'soc_system_led_pio'
+Info: 2019.10.08.16:37:31 Info: led_pio:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_led_pio --dir=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0082_led_pio_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Well/AppData/Local/Temp/alt8177_7125872767343639895.dir/0082_led_pio_gen/
+Info: 2019.10.08.16:37:32 Info: led_pio: Done RTL generation for module 'soc_system_led_pio'
+Info: 2019.10.08.16:37:32 Info: led_pio: "soc_system" instantiated altera_avalon_pio "led_pio"
+Info: 2019.10.08.16:37:32 Info: mm_bridge_0: "soc_system" instantiated altera_avalon_mm_bridge "mm_bridge_0"
+Info: 2019.10.08.16:37:32 Info: sysid_qsys: "soc_system" instantiated altera_avalon_sysid_qsys "sysid_qsys"
+Info: 2019.10.08.16:37:32 Info: mm_interconnect_0: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2019.10.08.16:37:33 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:33 Info: mm_interconnect_1: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: 2019.10.08.16:37:34 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:34 Info: mm_interconnect_2: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: 2019.10.08.16:37:37 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:37 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:37 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:37 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:37 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:37 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:37 Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:38 Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:38 Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:38 Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:38 Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:38 Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: 2019.10.08.16:37:40 Info: mm_interconnect_3: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_3"
+Info: 2019.10.08.16:37:40 Info: irq_mapper: "soc_system" instantiated altera_irq_mapper "irq_mapper"
+Info: 2019.10.08.16:37:40 Info: irq_mapper_001: "soc_system" instantiated altera_irq_mapper "irq_mapper_001"
+Info: 2019.10.08.16:37:40 Info: irq_mapper_002: "soc_system" instantiated altera_irq_mapper "irq_mapper_002"
+Info: 2019.10.08.16:37:40 Info: rst_controller: "soc_system" instantiated altera_reset_controller "rst_controller"
+Info: 2019.10.08.16:37:40 Info: jtag_phy_embedded_in_jtag_master: "fpga_only_master" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: 2019.10.08.16:37:40 Info: timing_adt: "fpga_only_master" instantiated timing_adapter "timing_adt"
+Info: 2019.10.08.16:37:40 Info: fifo: "fpga_only_master" instantiated altera_avalon_sc_fifo "fifo"
+Info: 2019.10.08.16:37:40 Info: b2p: "fpga_only_master" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: 2019.10.08.16:37:40 Info: p2b: "fpga_only_master" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: 2019.10.08.16:37:40 Info: transacto: "fpga_only_master" instantiated altera_avalon_packets_to_master "transacto"
+Info: 2019.10.08.16:37:40 Info: b2p_adapter: "fpga_only_master" instantiated channel_adapter "b2p_adapter"
+Info: 2019.10.08.16:37:40 Info: p2b_adapter: "fpga_only_master" instantiated channel_adapter "p2b_adapter"
+Info: 2019.10.08.16:37:40 Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: 2019.10.08.16:37:41 Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: 2019.10.08.16:37:41 Info: alt_vip_vfr_hdmi_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "alt_vip_vfr_hdmi_avalon_master_translator"
+Info: 2019.10.08.16:37:41 Info: alt_vip_vfr_hdmi_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "alt_vip_vfr_hdmi_avalon_master_agent"
+Info: 2019.10.08.16:37:41 Info: hps_0_f2h_axi_slave_agent: "mm_interconnect_0" instantiated altera_merlin_axi_slave_ni "hps_0_f2h_axi_slave_agent"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2019.10.08.16:37:41 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: 2019.10.08.16:37:41 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2019.10.08.16:37:41 Info: alt_vip_vfr_hdmi_avalon_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "alt_vip_vfr_hdmi_avalon_master_limiter"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: hps_0_f2h_axi_slave_wr_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "hps_0_f2h_axi_slave_wr_burst_adapter"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2019.10.08.16:37:41 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: 2019.10.08.16:37:41 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2019.10.08.16:37:41 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: hps_only_master_master_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "hps_only_master_master_cmd_width_adapter"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: hps_0_f2h_sdram0_data_translator: "mm_interconnect_1" instantiated altera_merlin_slave_translator "hps_0_f2h_sdram0_data_translator"
+Info: 2019.10.08.16:37:41 Info: hps_0_f2h_sdram0_data_agent: "mm_interconnect_1" instantiated altera_merlin_slave_agent "hps_0_f2h_sdram0_data_agent"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: 2019.10.08.16:37:41 Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: 2019.10.08.16:37:41 Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2019.10.08.16:37:41 Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: avalon_st_adapter: "mm_interconnect_1" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2019.10.08.16:37:41 Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_2" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: router: "mm_interconnect_2" instantiated altera_merlin_router "router"
+Info: 2019.10.08.16:37:41 Info: router_002: "mm_interconnect_2" instantiated altera_merlin_router "router_002"
+Info: 2019.10.08.16:37:41 Info: cmd_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2019.10.08.16:37:41 Info: cmd_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: rsp_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2019.10.08.16:37:41 Info: rsp_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: router: "mm_interconnect_3" instantiated altera_merlin_router "router"
+Info: 2019.10.08.16:37:41 Info: router_001: "mm_interconnect_3" instantiated altera_merlin_router "router_001"
+Info: 2019.10.08.16:37:41 Info: router_002: "mm_interconnect_3" instantiated altera_merlin_router "router_002"
+Info: 2019.10.08.16:37:41 Info: router_004: "mm_interconnect_3" instantiated altera_merlin_router "router_004"
+Info: 2019.10.08.16:37:41 Info: cmd_demux: "mm_interconnect_3" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2019.10.08.16:37:41 Info: cmd_demux_001: "mm_interconnect_3" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: 2019.10.08.16:37:41 Info: cmd_mux: "mm_interconnect_3" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: cmd_mux_002: "mm_interconnect_3" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: rsp_demux: "mm_interconnect_3" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2019.10.08.16:37:41 Info: rsp_demux_002: "mm_interconnect_3" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: 2019.10.08.16:37:41 Info: rsp_mux: "mm_interconnect_3" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: rsp_mux_001: "mm_interconnect_3" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: crosser: "mm_interconnect_3" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:41 Info: Reusing file C:/Users/Well/Downloads/DE10_NANO_SoC_FB/soc_system/synthesis/submodules
+Info: 2019.10.08.16:37:56 Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: 2019.10.08.16:37:56 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2019.10.08.16:37:56 Info: soc_system: Done "soc_system" with 76 modules, 179 files
+Info: 2019.10.08.16:37:57 Info: qsys-generate succeeded.
+Info: 2019.10.08.16:37:57 Info: Finished: Create HDL design files for synthesis
+Info (11131): Completed upgrading IP component Qsys with file "soc_system.qsys"
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 68 warnings
+    Info: Peak virtual memory: 4912 megabytes
+    Info: Processing ended: Tue Oct 08 16:38:08 2019
+    Info: Elapsed time: 00:02:59
+    Info: Total CPU time (on all processors): 00:04:26
+
+
